@@ -1,0 +1,142 @@
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #a855f7;
+    --accent-color: #ec4899;
+    --dark-color: #0a0a16;
+    --light-color: #f8fafc;
+    --text-color: #e2e8f0;
+    --text-light: #94a3b8;
+    --success-color: #10b981;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: var(--accent-color);
+    color: var(--light-color);
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background: var(--dark-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+#bgCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+/* Custom Cursor Styles */
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Inner Dot */
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 6px var(--accent-color);
+}
+
+/* Outer Outline */
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--accent-color);
+    transition: transform 0.15s ease;
+    opacity: 0.6;
+}
+
+/* Disable on Mobile & Tablet */
+@media (max-width: 768px) {
+
+    .cursor-dot,
+    .cursor-outline {
+        display: none;
+    }
+}
+
+
+/* floating elements */
+/* .floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    z-index: 1;
+    animation: floatY 6s ease-in-out infinite;
+}
+
+.shape-1 {
+    top: 10%;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: var(--primary-color);
+}
+
+.shape-2 {
+    top: 60%;
+    right: -150px;
+    width: 400px;
+    height: 400px;
+    background: var(--secondary-color);
+}
+
+.shape-3 {
+    top: 10%;
+    bottom: 10%;
+    width: 250px;
+    height: 250px;
+    background: var(--accent-color);
+}
+
+@keyframes floatY {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+} */
+

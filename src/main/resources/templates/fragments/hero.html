@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <th:block th:fragment="hero-section">
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <!-- Hero Content -->
+                <div class="hero-content">
+                    <div class="hero-greeting"><span>Hi there, I'm</span></div>
+                    <h1 class="hero-title"><span class="gradient-text">Pranjal Patel</span></h1>
+                    <h2 class="hero-subtitle">Java Full Stack Developer</h2>
+                    <p class="hero-description">
+                        I'm a passionate Java Full Stack Developer with hands-on experience in building robust web
+                        applications using Spring Boot and React.js. I love solving real-world problems with clean code,
+                        scalable
+                        architecture, and intuitive UI/UX.
+                    </p>
+                    <!-- Call to Action Buttons -->
+                    <div class="hero-button">
+                        <a href="#project" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+
+                        <!-- Download CV -->
+                        <a href="https://drive.google.com/file/d/1RIpOlb--U9hdxQoCUbBRvhR2ZhBpzciT/view?usp=drive_link"
+                            class="btn btn-outline" target="_blank">
+                            Download CV 
+                        </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="tel:+916266038166" class="social-link" title="Phone"><i
+                                class="fas fa-phone-alt"></i></a>
+                        <a href="mailto:pranjalpatel6266@gmail.com" class="social-link" title="Email"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/pranjal-patel6266/" class="social-link" target="_blank"
+                            title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/pranjalpatel044" class="social-link" target="_blank"
+                            title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="hero-image-box">
+                    <div class="hero-image-innerbox">
+                       <img th:src="@{/images/hero-image1.jpg}" alt="Pranjal Patel" class="hero-image" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="scroll-indicator-arrow">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+    </th:block>
+</body>
+
+</html>

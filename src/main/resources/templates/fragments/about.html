@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+
+<body>
+    <th:block th:fragment="about-section">
+        <section class="section-about" id="about">
+            
+            <!-- Section Title -->
+            <div class="section-title-container">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                    A quick insight into my background, technical skills, and what drives my passion for development.
+                </p>
+            </div>
+
+            <div class="about-container">
+                
+                <!-- Left: About Content -->
+                <div class="about-content">
+                    <div class="about-tagline"><span>My Background</span></div>
+                    <h3 class="about-heading">Developer by Profession.</h3>
+                    <p class="about-text">
+                        I'm <strong>Pranjal Patel</strong>, a dedicated and detail-oriented Java Web
+                        Developer with a solid background in full-stack development.
+                        I specialize in building robust backend systems with <strong>Spring Boot</strong> and crafting
+                        responsive user interfaces using <strong>React.js</strong>.
+                    </p>
+                    <p class="about-text">
+                        Over the years, I’ve worked on a diverse range of projects — from
+                        <strong>URL Shortener Web App</strong> and <strong>Retail Management Software</strong> to
+                        <strong>AI-powered tools</strong> and personal portfolio sites.
+                    </p>
+                    <p class="about-text">
+                        I'm a lifelong learner, actively sharpening my problem-solving skills through
+                        platforms like <strong>LeetCode</strong> and <strong>GeeksforGeeks</strong>, and continuously
+                        exploring new technologies.
+                    </p>
+
+                    <!-- Skills -->
+                    <div class="skills-container">
+                        <div class="skill-item"><div class="skill-icon"><i class="fab fa-java"></i></div><div class="skill-name">Java</div></div>
+                        <div class="skill-item"><div class="skill-icon"><i class="fas fa-leaf"></i></div><div class="skill-name">Spring Boot</div></div>
+                        <div class="skill-item"><div class="skill-icon"><i class="fas fa-code"></i></div><div class="skill-name">Thymeleaf</div></div>
+                        <div class="skill-item"><div class="skill-icon"><i class="fab fa-bootstrap"></i></div><div class="skill-name">Bootstrap</div></div>
+                        <div class="skill-item"><div class="skill-icon"><i class="fab fa-html5"></i></div><div class="skill-name">HTML</div></div>
+                        <div class="skill-item"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><div class="skill-name">CSS</div></div>
+                        <div class="skill-item"><div class="skill-icon"><i class="fab fa-js-square"></i></div><div class="skill-name">JavaScript</div></div>
+                        <div class="skill-item"><div class="skill-icon"><i class="fab fa-react"></i></div><div class="skill-name">React</div></div>
+                        <div class="skill-item"><div class="skill-icon"><i class="fas fa-database"></i></div><div class="skill-name">SQL</div></div>
+                        <div class="skill-item"><div class="skill-icon"><i class="fas fa-server"></i></div><div class="skill-name">MySQL</div></div>
+                        <div class="skill-item"><div class="skill-icon"><i class="fab fa-git-alt"></i></div><div class="skill-name">Git</div></div>
+                        <div class="skill-item"><div class="skill-icon"><i class="fas fa-cogs"></i></div><div class="skill-name">Maven</div></div>
+                    </div>
+                </div>
+
+                <!-- Right: Image -->
+                <div class="about-visual">
+                    <div class="about-image-container">
+                        <img src="images/about-image.png" alt="About Me" class="about-image" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </th:block>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pranjal Patel - Personal Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/loader.css}">
+    <link rel="stylesheet" th:href="@{/css/footer.css}">
+    <link rel="stylesheet" th:href="@{/css/contact.css}">
+    <link rel="stylesheet" th:href="@{/css/scrolltotop.css}">
+    <link rel="stylesheet" th:href="@{/css/aichat.css}">
+    <link rel="stylesheet" th:href="@{/css/achivements.css}">
+    <link rel="stylesheet" th:href="@{/css/project.css}">
+    <link rel="stylesheet" th:href="@{/css/about.css}">
+    <link rel="stylesheet" th:href="@{/css/hero.css}">
+    <link rel="stylesheet" th:href="@{/css/header.css}">
+
+</head>
+
+<body>
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- cursor  -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- loading animation -->
+    <div th:replace="~{fragments/loader :: loader}"></div>
+
+    <!-- header -->
+    <div th:replace="~{fragments/header :: site-header}"></div>
+
+    <!-- hero -->
+    <div th:replace="~{fragments/hero :: hero-section}"></div>
+
+    <!-- about -->
+    <div th:replace="~{fragments/about :: about-section}"></div>
+
+    <!-- project -->
+    <div th:replace="~{fragments/project :: project-section}"></div>
+
+    <!-- achievement -->
+    <div th:replace="~{fragments/achivements :: achivements-section}"></div>
+
+    <!-- contact -->
+    <div th:replace="~{fragments/contact :: contact-section}"></div>
+
+    <!-- footer -->
+    <div th:replace="~{fragments/footer :: footer-section}"></div>
+
+    <!-- ScrollToTopBtn -->
+    <div th:replace="~{fragments/ScrollToTopbtn:: scrollTopBtn}"></div>
+
+        <!-- AI Chat -->
+    <div th:replace="~{fragments/aichat:: aichat-section}"></div>
+
+    <!-- script -->
+    <script th:src="@{/js/script.js}"></script>
+</body>
+
+</html>

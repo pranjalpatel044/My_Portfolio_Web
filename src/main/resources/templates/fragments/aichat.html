@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    <th:block th:fragment="aichat-section">
+
+        <section class="section-aichat" id="aichat">
+
+            <!-- -000000- -->
+            <div id="chatButton">
+                <div class="loader-container" title="Ask Me!">
+                    <div class="sphere-core"></div>
+                    <div class="ring ring-1"></div>
+                    <div class="ring ring-2"></div>
+                    <div class="ring ring-3"></div>
+                </div>
+            </div>
+
+            <!-- Chat Window -->
+            <div id="chatWindow">
+                <div id="chatHeader">
+                    <span>AI Assistant</span>
+                    <span id="closeChat">✖</span>
+                </div>
+                <div id="chatbox"></div>
+                <div id="chatInput">
+                    <input type="text" id="userInput" placeholder="Ask me anything...">
+                    <button id="sendBtn">➤</button>
+                </div>
+            </div>
+        </section>
+    </th:block>
+
+</body>
+
+</html>

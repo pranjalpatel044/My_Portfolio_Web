@@ -1,0 +1,47 @@
+<<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+
+<body>
+
+    <!-- Preloader -->
+    <div class="loader-wrapper">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header Fragment -->
+    <th:block th:fragment="site-header">
+        <header class="header">
+            <div class="container header-container">
+                <div class="logo">P. <span>P.</span></div>
+
+                <!-- Hamburger Menu -->
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav class="nav">
+                    <div class="nav-links" id="nav-links">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#project" class="nav-link">Projects</a>
+                        <a href="#achievements" class="nav-link">Achievements</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </th:block>
+
+    <!-- Dummy Sections for Scroll -->
+    <section id="home" style="height:100vh; background:#111;"></section>
+    <section id="about" style="height:100vh; background:#222;"></section>
+    <section id="project" style="height:100vh; background:#333;"></section>
+    <section id="achievements" style="height:100vh; background:#444;"></section>
+    <section id="contact" style="height:100vh; background:#555;"></section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
