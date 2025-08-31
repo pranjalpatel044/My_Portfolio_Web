@@ -1,6 +1,6 @@
 # 🌐 My Portfolio Website
 
-A personal **portfolio website** built with **Spring Boot 3, Thymeleaf, HTML, CSS, and Java**.  
+A personal **portfolio website** built with **Spring Boot 3, Thymeleaf, HTML, CSS, and JavaScript**.  
 This project showcases my work, skills, and projects in a clean and responsive design.
 
 ---
@@ -39,5 +39,6 @@ cd My_Portfolio_Web
 
 # Run with Maven wrapper
 ./mvnw spring-boot:run
+
 
 
